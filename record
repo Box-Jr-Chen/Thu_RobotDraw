@@ -1,0 +1,112 @@
+圖形在直徑13.6公分以內
+
+center ->(7.4,10.5)
+
+
+
+#------------重疊部分處理
+我使用 morphology.skeletonize 得到圖像骨架，再用cv2.findContours來找到路徑，但有個問題，那就是每一個Contour裡面的點路徑，有可能與其他Contour點路徑重疊，那我應該怎麼剃除才能把需要點保留，把重疊的點去掉
+在 cv2.findContours 函数中，可以通过指定参数 cv2.RETR_TREE 或 cv2.RETR_EXTERNAL，来得到层级结构的轮廓信息。其中 cv2.RETR_TREE 可以得到完整的轮廓层级结构，包括轮廓之间的父子关系和重叠关系，而 cv2.RETR_EXTERNAL 只会得到最外层的轮廓。
+
+如果你只想得到最外层的轮廓，可以使用 cv2.RETR_EXTERNAL，并将重叠的轮廓合并成一个整体。具体做法是使用 cv2.drawContours 函数来绘制轮廓，然后将绘制出的轮廓二值化，再使用 morphology.skeletonize 得到骨架。
+
+如果你需要得到完整的轮廓层级结构，可以遍历每一个轮廓，判断其是否被包含在另一个轮廓内部或与其他轮廓重叠。对于被包含在其他轮廓内部的轮廓，可以将其删除或者将其作为子轮廓保留。对于重叠的轮廓，可以使用 cv2.subtract 函数来将两个轮廓取差集，得到重叠部分的轮廓。
+
+
+
+
+陳建至
+可否用cv2.findContours與cv2.subtract做一個範例，找出各個Contour重疊的地方
+当两个轮廓重叠时，它们的差集就是它们重叠的部分。可以使用 cv2.findContours 和 cv2.subtract 函数来找到两个轮廓的重叠部分。
+
+以下是一个示例代码，它从一张图像中找到两个重叠的圆形轮廓，并将它们的重叠部分提取出来：
+
+python
+Copy code
+import cv2
+import numpy as np
+
+# 创建一个黑色图像
+img = np.zeros((400, 400), dtype=np.uint8)
+
+# 绘制两个重叠的圆形轮廓
+cv2.circle(img, (100, 100), 80, 255, 2)
+cv2.circle(img, (150, 150), 80, 255, 2)
+
+# 找到所有轮廓
+contours, _ = cv2.findContours(img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+
+# 将两个轮廓的重叠部分提取出来
+mask = np.zeros_like(img)
+cv2.drawContours(mask, contours, 0, 255, -1)
+cv2.drawContours(mask, contours, 1, 255, -1)
+overlap = cv2.subtract(contours[0], contours[1])
+
+# 显示图像和结果
+cv2.imshow('img', img)
+cv2.imshow('mask', mask)
+cv2.imshow('overlap', overlap)
+cv2.waitKey()
+cv2.destroyAllWindows()
+这个示例代码会显示三个窗口，一个是原始图像，一个是包含所有轮廓的掩膜图像，另一个是两个轮廓重叠的部分。
+
+注意，这个示例代码假设图像中只有两个轮廓，并且它们是重叠的。在实际情况中，可能会有更多的轮廓和更复杂的重叠情况，需要根据具体情况进行修改。
+
+
+
+
+陳建至
+如果我想要重疊的地方，一個保留，一個去除，那該怎麼做
+如果您想要将重叠部分的其中一个保留，另一个去除，可以使用cv2.bitwise_and和cv2.bitwise_or函数来实现。
+
+首先找到两个Contour的重叠部分，可以使用cv2.findContours和cv2.subtract函数，具体步骤与前面回答的问题类似。
+
+然后将其中一个Contour在重叠部分的区域中设为白色，其余部分设为黑色；将另一个Contour在重叠部分的区域中设为黑色，其余部分设为白色。可以使用cv2.bitwise_and和cv2.bitwise_or函数来实现这一步骤。
+
+下面是一个简单的示例代码，演示了如何将两个Contour的重叠部分中一个Contour保留，另一个Contour去除的方法：
+
+python
+Copy code
+import cv2
+import numpy as np
+
+# 读取图像
+img = cv2.imread('example.jpg', cv2.IMREAD_GRAYSCALE)
+
+# 二值化
+ret, thresh = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+
+# 寻找轮廓
+contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+
+# 创建一个全黑的掩模
+mask = np.zeros(img.shape, np.uint8)
+
+# 将第一个Contour画在掩模上
+cv2.drawContours(mask, contours, 0, 255, -1)
+
+# 创建一个全白的掩模
+white_mask = np.ones(img.shape, np.uint8) * 255
+
+# 将第二个Contour画在白色掩模上
+cv2.drawContours(white_mask, contours, 1, 0, -1)
+
+# 取两个掩模的交集，得到重叠部分
+overlap = cv2.bitwise_and(mask, white_mask)
+
+# 在重叠部分的区域内将第一个Contour设为白色，其余部分设为黑色
+result1 = np.zeros(img.shape, np.uint8)
+result1[overlap == 255] = 255
+
+# 在重叠部分的区域内将第二个Contour设为黑色，其余部分设为白色
+result2 = np.zeros(img.shape, np.uint8)
+result2[overlap == 255] = 0
+
+# 将两个结果合并
+result = cv2.bitwise_or(result1, result2)
+
+# 显示结果
+cv2.imshow('result', result)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+在这个示例代码中，我们首先找到两个Contour的重叠部分，然后将第一个Contour画在一个全黑的掩模上，将第二个Contour画在一个全白的掩模上。然后使用cv2.bitwise_and函数得到两个掩模的交集，即重叠部分。在重叠部分的区域内将第一个Contour设为白色，其余部分设为黑色；将第二个Contour设为黑色，其余部
