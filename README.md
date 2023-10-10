@@ -71,9 +71,9 @@
 <div style="display: flex; justify-content: space-between;">
 
 
-<img src="README/Untitled%203.png"  width="50%">
+<img src="README/Untitled%203.png"  width="40%">
 
-<img src="README/Untitled%204.png"  width="50%">
+<img src="README/Untitled%204.png"  width="40%">
 
 
 </div>
@@ -107,17 +107,17 @@
 
 - 手臂控制分頁、圖紙狀況分頁、調色盤狀況分頁。
 
-![Untitled](README/Untitled%209.png)
+
+<img src="README/Untitled%209.png"  width="40%">
 
 ## 實驗結果
 
 - 使用三張圖來做實驗測試。
 
-![Untitled](README/Untitled%2010.png)
+<img src="README/Untitled%2010.png"  width="40%">
+<img src="README/Untitled%2011.png"  width="40%">
+<img src="README/Untitled%2012.png"  width="40%">
 
-![Untitled](README/Untitled%2011.png)
-
-![Untitled](README/Untitled%2012.png)
 
 ## 缺點
 
