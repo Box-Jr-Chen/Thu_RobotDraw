@@ -61,7 +61,7 @@
 
 
 
-<img src="README/Untitled%202.png"  width="50%">
+<img src="README/Untitled%202.png"  width="60%">
 
 ### 形態學骨架 Morphological Skeleton
 
@@ -71,9 +71,9 @@
 <div style="display: flex; justify-content: space-between;">
 
 
-<img src="README/Untitled%203.png"  width="300px" height="300px">
+<img src="README/Untitled%203.png"  width="50%">
 
-<img src="README/Untitled%204.png"  width="300px" height="300px">
+<img src="README/Untitled%204.png"  width="50%">
 
 
 </div>
@@ -86,8 +86,7 @@
 - 使用K-means做顏色判定以後，將RGB 值轉換為 HSV（色相、飽和度、明度）顏色空間格式。
 - 設定 8 種顏色，我們將飽和度和明度的範圍設定為 50 至 255 的數值。較低的飽和度值使顏色趨近 於白色，而較低的明度值使顏色趨向於黑色。
 
-![Untitled](README/Untitled%205.png){width=50%}
-
+![Untitled](README/Untitled%205.png)
 ### 路徑生成
 
 - 使用線稿和著色後的色彩稿來對比、分解為不同的區塊，並根據需要進行著色。
@@ -100,25 +99,25 @@
 
 - 顏色判斷→圖形路徑生成→自動繪畫。
 
-![Untitled](README/Untitled%207.png){width=50%}
+![Untitled](README/Untitled%207.png)
 
-![Untitled](README/Untitled%208.png){width=50%}
+![Untitled](README/Untitled%208.png)
 
 ### 界面設計
 
 - 手臂控制分頁、圖紙狀況分頁、調色盤狀況分頁。
 
-![Untitled](README/Untitled%209.png){width=50%}
+![Untitled](README/Untitled%209.png)
 
 ## 實驗結果
 
 - 使用三張圖來做實驗測試。
 
-![Untitled](README/Untitled%2010.png){width=50%}
+![Untitled](README/Untitled%2010.png)
 
-![Untitled](README/Untitled%2011.png){width=50%}
+![Untitled](README/Untitled%2011.png)
 
-![Untitled](README/Untitled%2012.png){width=50%}
+![Untitled](README/Untitled%2012.png)
 
 ## 缺點
 
