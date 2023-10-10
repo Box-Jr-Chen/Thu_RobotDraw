@@ -86,22 +86,25 @@
 - 使用K-means做顏色判定以後，將RGB 值轉換為 HSV（色相、飽和度、明度）顏色空間格式。
 - 設定 8 種顏色，我們將飽和度和明度的範圍設定為 50 至 255 的數值。較低的飽和度值使顏色趨近 於白色，而較低的明度值使顏色趨向於黑色。
 
-![Untitled](README/Untitled%205.png)
+<img src="README/Untitled%205.png"  width="50%">
+
 ### 路徑生成
 
 - 使用線稿和著色後的色彩稿來對比、分解為不同的區塊，並根據需要進行著色。
 - 對於每個需要著色的區塊，我們進行顏色分析和分類，識別出區塊中存在的不同顏色。
 - 使用斜線群做為基底，並找出範圍線段與斜線群的交點來生成著色路徑。
 
-![Untitled](README/Untitled%206.png){width=50%}
+
+<img src="README/Untitled%206.png"  width="50%">
 
 ### 系統流程
 
 - 顏色判斷→圖形路徑生成→自動繪畫。
 
-![Untitled](README/Untitled%207.png)
 
-![Untitled](README/Untitled%208.png)
+
+<img src="README/Untitled%207.png"  width="50%">
+<img src="README/Untitled%208.png"  width="50%">
 
 ### 界面設計
 
