@@ -18,9 +18,9 @@
 - 我們所使用的羅技視訊攝影機C922 Pro HD Steam Webcam具有多種功能和特點，故此成為本實驗的選擇視覺設備。
 - 電腦硬件為GF63 8RD，CPU為i7-8750H，GPU為GTX1050。
 
-![圖片_robot.jpg](README/%25E5%259C%2596%25E7%2589%2587_robot.jpg){ width=50% }
+![圖片_robot.jpg](README/%25E5%259C%2596%25E7%2589%2587_robot.jpg){width=50%}
 
-![圖片_cam.jpg](README/%25E5%259C%2596%25E7%2589%2587_cam.jpg){ width=50% }
+![圖片_cam.jpg](README/%25E5%259C%2596%25E7%2589%2587_cam.jpg){width=50%}
 
 ### 軟體配置
 
@@ -37,9 +37,9 @@
 - 調色板，放置在圖畫區的左側，大小為 6mm x 12.4mm。
 - 圖畫區右側準備了一個小杯子作為清洗顏料和用水的容器。
 
-![圖片_draw_robot.jpg](README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg){ width=50% }
+![圖片_draw_robot.jpg](README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg){width=50%}
 
-![Untitled](README/Untitled%201.png){ width=50% }
+![Untitled](README/Untitled%201.png){width=50%}
 
 ## 相關研究
 
@@ -48,16 +48,16 @@
 - 透過將數據點劃分到 K 個聚類中心，它能有效實現聚類。算法的目標是最小化聚類內的平方誤差和，進而使得每個數據點與所屬聚類中心的距離之和最小。
 - 工作方式 : 初始化→分配數據點→更新聚類中心→重複迭代。
 
-![Untitled](README/Untitled%202.png){ width=50% }
+![Untitled](README/Untitled%202.png){width=50%}
 
 ### 形態學骨架 Morphological Skeleton
 
 - 通過從圖像中萃取物體的骨架，我們能夠精煉資訊、節省儲存空間，同時保留主要形狀和結構特徵。
 - 在形態學骨架的過程中 ，我們首先將圖像中的物體進行二值化，然後，我們根據特定的操作步改變物體的形狀，直到獲得物體的中心線或骨架結構。
 
-![Untitled](README/Untitled%203.png){ width=50% }
+![Untitled](README/Untitled%203.png){width=50%}
 
-![Untitled](README/Untitled%204.png){ width=50% }
+![Untitled](README/Untitled%204.png){width=50%}
 
 ## 研究方法
 
@@ -66,7 +66,7 @@
 - 使用K-means做顏色判定以後，將RGB 值轉換為 HSV（色相、飽和度、明度）顏色空間格式。
 - 設定 8 種顏色，我們將飽和度和明度的範圍設定為 50 至 255 的數值。較低的飽和度值使顏色趨近 於白色，而較低的明度值使顏色趨向於黑色。
 
-![Untitled](README/Untitled%205.png){ width=50% }
+![Untitled](README/Untitled%205.png){width=50%}
 
 ### 路徑生成
 
@@ -74,31 +74,31 @@
 - 對於每個需要著色的區塊，我們進行顏色分析和分類，識別出區塊中存在的不同顏色。
 - 使用斜線群做為基底，並找出範圍線段與斜線群的交點來生成著色路徑。
 
-![Untitled](README/Untitled%206.png){ width=50% }
+![Untitled](README/Untitled%206.png){width=50%}
 
 ### 系統流程
 
 - 顏色判斷→圖形路徑生成→自動繪畫。
 
-![Untitled](README/Untitled%207.png){ width=50% }
+![Untitled](README/Untitled%207.png){width=50%}
 
-![Untitled](README/Untitled%208.png){ width=50% }
+![Untitled](README/Untitled%208.png){width=50%}
 
 ### 界面設計
 
 - 手臂控制分頁、圖紙狀況分頁、調色盤狀況分頁。
 
-![Untitled](README/Untitled%209.png){ width=50% }
+![Untitled](README/Untitled%209.png){width=50%}
 
 ## 實驗結果
 
 - 使用三張圖來做實驗測試。
 
-![Untitled](README/Untitled%2010.png){ width=50% }
+![Untitled](README/Untitled%2010.png){width=50%}
 
-![Untitled](README/Untitled%2011.png){ width=50% }
+![Untitled](README/Untitled%2011.png){width=50%}
 
-![Untitled](README/Untitled%2012.png){ width=50% }
+![Untitled](README/Untitled%2012.png){width=50%}
 
 ## 缺點
 
