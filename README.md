@@ -45,9 +45,9 @@
 
 <div style="display: flex; justify-content: space-between;">
 
-<img src="README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg"  width="250px" height="250px">
+<img src="README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg"  width="300px" height="300px">
 
-<img src="README/Untitled%201.png"  width="250px" height="250px">
+<img src="README/Untitled%201.png"  width="300px" height="300px">
 </div>
 
 
@@ -59,16 +59,25 @@
 - 透過將數據點劃分到 K 個聚類中心，它能有效實現聚類。算法的目標是最小化聚類內的平方誤差和，進而使得每個數據點與所屬聚類中心的距離之和最小。
 - 工作方式 : 初始化→分配數據點→更新聚類中心→重複迭代。
 
-![Untitled](README/Untitled%202.png){width=50%}
+
+
+<img src="README/Untitled%202.png"  width="50%">
 
 ### 形態學骨架 Morphological Skeleton
 
 - 通過從圖像中萃取物體的骨架，我們能夠精煉資訊、節省儲存空間，同時保留主要形狀和結構特徵。
 - 在形態學骨架的過程中 ，我們首先將圖像中的物體進行二值化，然後，我們根據特定的操作步改變物體的形狀，直到獲得物體的中心線或骨架結構。
 
-![Untitled](README/Untitled%203.png){width=50%}
+<div style="display: flex; justify-content: space-between;">
 
-![Untitled](README/Untitled%204.png){width=50%}
+
+<img src="README/Untitled%203.png"  width="300px" height="300px">
+
+<img src="README/Untitled%204.png"  width="300px" height="300px">
+
+
+</div>
+
 
 ## 研究方法
 
