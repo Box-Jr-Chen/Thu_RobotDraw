@@ -45,9 +45,9 @@
 
 <div style="display: flex; justify-content: space-between;">
 
-<img src="README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg"  width="40%">
+<img src="README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg"  width="250px" height="250px">
 
-<img src="README/Untitled%201.png"  width="40%">
+<img src="README/Untitled%201.png"  width="250px" height="250px">
 </div>
 
 
