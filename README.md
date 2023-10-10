@@ -19,11 +19,12 @@
 - 我們所使用的羅技視訊攝影機C922 Pro HD Steam Webcam具有多種功能和特點，故此成為本實驗的選擇視覺設備。
 - 電腦硬件為GF63 8RD，CPU為i7-8750H，GPU為GTX1050。
 
-
+<div style="display: flex; justify-content: space-between;">
 
 <img src="README/%25E5%259C%2596%25E7%2589%2587_robot.jpg"  width="40%">
 
 <img src="README/%25E5%259C%2596%25E7%2589%2587_cam.jpg"  width="40%">
+</div>
 
 ### 軟體配置
 
