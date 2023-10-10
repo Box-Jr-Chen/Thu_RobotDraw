@@ -41,9 +41,16 @@
 - 調色板，放置在圖畫區的左側，大小為 6mm x 12.4mm。
 - 圖畫區右側準備了一個小杯子作為清洗顏料和用水的容器。
 
-![圖片_draw_robot.jpg](README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg){width=50%}
 
-![Untitled](README/Untitled%201.png){width=50%}
+
+<div style="display: flex; justify-content: space-between;">
+
+<img src="README/%25E5%259C%2596%25E7%2589%2587_draw_robot.jpg"  width="40%">
+
+<img src="README/Untitled%201.png"  width="40%">
+</div>
+
+
 
 ## 相關研究
 
