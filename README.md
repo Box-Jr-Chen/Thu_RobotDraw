@@ -115,6 +115,7 @@
 ## 實驗結果
 
 - 使用三張圖來做實驗測試。
+- 影片測試連結: https://www.youtube.com/watch?v=pz76KICqG9c
 
 <div style="display: flex; justify-content: space-between;">
 <img src="README/Untitled%2010.png"  width="40%">
