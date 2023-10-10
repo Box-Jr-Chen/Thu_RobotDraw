@@ -73,7 +73,7 @@
 
 <img src="README/Untitled%203.png"  width="40%">
 
-<img src="README/Untitled%204.png"  width="40%">
+<img src="README/Untitled%204.png"  width="30%">
 
 
 </div>
@@ -103,15 +103,15 @@
 
 
 
-<img src="README/Untitled%207.png"  width="60%">
-<img src="README/Untitled%208.png"  width="60%">
+<img src="README/Untitled%207.png"  width="65%">
+<img src="README/Untitled%208.png"  width="65%">
 
 ### 界面設計
 
 - 手臂控制分頁、圖紙狀況分頁、調色盤狀況分頁。
 
 
-<img src="README/Untitled%209.png"  width="50%">
+<img src="README/Untitled%209.png"  width="55%">
 
 ## 實驗結果
 
