@@ -9,7 +9,7 @@
 在機械手臂繪製研究中，大部分研究以產出優化路徑來驅動機械手臂依據所規畫 路徑繪製圖形動作，不管是將圖片做二值化處理在透過邊緣運算規劃路徑或是利用對 抗網路 (GAN) 來產生圖片再進行路徑處理。只有少部分提及到視覺與現實色採的整合應用，比如何如判斷顏料顏色來進行色彩調色以及將最終目標顏色進行圖片路徑上色等，要想進行顏色繪製的研究是需要運用現實的色彩學理論。
 
 
-<img src="README/Untitled.png"  width="30%">
+<img src="README/Untitled.png"  width="20%">
 
 ## 硬體配置
 
@@ -21,9 +21,9 @@
 
 <div style="display: flex; justify-content: space-between;">
 
-<img src="README/%25E5%259C%2596%25E7%2589%2587_robot.jpg"  width="40%">
+<img src="README/%25E5%259C%2596%25E7%2589%2587_robot.jpg"  width="30%">
 
-<img src="README/%25E5%259C%2596%25E7%2589%2587_cam.jpg"  width="40%">
+<img src="README/%25E5%259C%2596%25E7%2589%2587_cam.jpg"  width="30%">
 </div>
 
 ### 軟體配置
