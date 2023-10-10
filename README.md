@@ -15,7 +15,7 @@
 ### 硬體配置
 
 - 桌上手臂為大象機器人的ultraArm P340，該手臂是基於開源技術的協作機器臂，採用鋁合金結構，基板適用Arduino開發板ATMEGA2560-16AU AVR處理器，一體化的設計，操作簡單，提供激光雕刻接口、自適應夾爪接口、吸泵接口、燒錄開關輕鬆切換，手臂是由兩顆步進馬達所組成，利用連桿機構來進行三軸方向運動。
-- 我們使用的羅技視訊攝影機C922 Pro HD Steam Webcam具有多種功能和特點，故此成為本實驗的選擇視覺設備。
+- 我們使用的羅技視訊攝影機C922 Pro HD Steam Webcam具有多種功能特點，成為本實驗的選擇視覺設備。
 - 電腦硬件為GF63 8RD，CPU為i7-8750H，GPU為GTX1050。
 
 <div style="display: flex; justify-content: space-between;">
