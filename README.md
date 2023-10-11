@@ -102,8 +102,8 @@
 
 
 
-<img src="README/Untitled%207.png"  width="65%">
-<img src="README/Untitled%208.png"  width="65%">
+<img src="README/Untitled%207.png"  width="70%">
+<img src="README/Untitled%208.png"  width="70%">
 
 ### 界面設計
 
